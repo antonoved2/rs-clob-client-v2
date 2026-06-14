@@ -89,7 +89,7 @@ impl Client {
     pub fn new(host: &str) -> Result<Client> {
         let mut headers = HeaderMap::new();
 
-        headers.insert("User-Agent", HeaderValue::from_static("rs_clob_client"));
+        headers.insert("User-Agent", HeaderValue::from_static("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"));
         headers.insert("Accept", HeaderValue::from_static("*/*"));
         headers.insert("Connection", HeaderValue::from_static("keep-alive"));
         headers.insert("Content-Type", HeaderValue::from_static("application/json"));
